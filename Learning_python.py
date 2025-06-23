@@ -11,12 +11,14 @@ print(b)
 list_a = [2, 5, 8, 12, 5, 37, 92, 34, 1, 4]
 list_a.append(19)
 list_a.insert(0,44)
-list_a.remove(8)
+list_a.remove(2)
 print(list_a)
 list_a.pop(2)
 print(list_a)
 c = list_a.index(5)
 print(c)
+smallest = 1
+
 dna =10
 dna = 20 & 1
 print(dna)
@@ -42,6 +44,17 @@ print(person)
 
 squares = {x: x**2 for x in range(1, 6)}
 print(squares)  
+
+def first_unique_char(s):
+    from collections import Counter
+    count = Counter(s)
+    
+    for idx, char in enumerate(s):
+        if count[char] == 1:
+            return idx
+    return -1
+result = first_unique_char('loveleetcode')
+print(result)
 # {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
 
 

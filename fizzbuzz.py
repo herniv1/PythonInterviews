@@ -3,7 +3,6 @@
 #For numbers that are multiples of three and five, print "FizzBuzz".
 
 def vFnFizzBuzz():
-    #import pdb; pdb.set_trace()
     for i in range(1,51):
         strout = ""
         if i%3 == 0 :
